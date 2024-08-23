@@ -25,4 +25,9 @@ public class ClientServiceImpl implements ClientService {
     public Client getById(UUID id) {
         return this.queryService.getById(id);
     }
+
+    @Override
+    public boolean existsByUsername(String username) {
+        return this.queryService.existsByUsername(username);
+    }
 }

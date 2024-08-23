@@ -7,6 +7,8 @@ import com.elyashevich.cqrs.service.event.EventService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+
 @Service
 @RequiredArgsConstructor
 public class CardCommandServiceImpl implements CardCommandService {
@@ -17,5 +19,10 @@ public class CardCommandServiceImpl implements CardCommandService {
     public void create(Card object) {
         final CardCreateEvent cardCreateEvent = new CardCreateEvent(object);
         this.eventService.create(cardCreateEvent);
+    }
+
+    @Override
+    public void createByClientId(UUID id) {
+
     }
 }

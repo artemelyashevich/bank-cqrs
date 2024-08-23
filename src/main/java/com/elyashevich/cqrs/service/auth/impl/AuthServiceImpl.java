@@ -1,5 +1,6 @@
 package com.elyashevich.cqrs.service.auth.impl;
 
+import com.elyashevich.cqrs.domain.exception.ResourceAlreadyExistsException;
 import com.elyashevich.cqrs.domain.model.Client;
 import com.elyashevich.cqrs.service.auth.AuthService;
 import com.elyashevich.cqrs.service.client.ClientService;
@@ -21,6 +22,10 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public void register(Client client) {
-
+        if (this.clientService.existsByUsername(client.getUsername())) {
+            throw new ResourceAlreadyExistsException();
+        }
+        client.setPassword(client.getPassword());
+        this.clientService.create(client);
     }
 }

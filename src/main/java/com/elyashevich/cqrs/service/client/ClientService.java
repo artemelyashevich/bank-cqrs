@@ -5,4 +5,6 @@ import com.elyashevich.cqrs.service.CommandService;
 import com.elyashevich.cqrs.service.QueryService;
 
 public interface ClientService extends CommandService<Client>, QueryService<Client> {
+
+    boolean existsByUsername(String username);
 }
