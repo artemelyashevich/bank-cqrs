@@ -11,13 +11,13 @@ public class ObjectConverter  implements AttributeConverter<Object, String> {
     @SneakyThrows
     @Override
     public String convertToDatabaseColumn(Object o) {
-        var objectMapper = new ObjectMapper();
+        final ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.writeValueAsString(o);
     }
 
     @Override
     public Object convertToEntityAttribute(String s) {
-        var objectMapper = new ObjectMapper();
+        final ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.convertValue(s, Object.class);
     }
 }
