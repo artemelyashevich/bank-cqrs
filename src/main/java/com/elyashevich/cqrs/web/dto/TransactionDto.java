@@ -37,11 +37,11 @@ public class TransactionDto {
     private CardDto from;
 
     @NotNull(
-            message = "Sender card must be not null.",
+            message = "Receiver card must be not null.",
             groups = OnCreate.class
     )
     @Null(
-            message = "Sender card must be null."
+            message = "Receiver card must be null."
     )
     @Valid
     private CardDto to;

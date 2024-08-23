@@ -35,4 +35,9 @@ public class CardServiceImpl implements CardService {
         final Card card = new Card(client.getAccount());
         this.commandService.create(card);
     }
+
+    @Override
+    public boolean existsByNumberAndDate(String number, String date) {
+        return this.queryService.existsByNumberAndDate(number, date);
+    }
 }
