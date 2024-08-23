@@ -1,6 +1,7 @@
 package com.elyashevich.cqrs.events;
 
 import com.elyashevich.cqrs.domain.aggregate.Aggregate;
+import com.elyashevich.cqrs.domain.model.Transaction;
 import jakarta.persistence.Entity;
 import lombok.Builder;
 import lombok.Getter;
@@ -15,7 +16,7 @@ import lombok.Setter;
 public class TransactionCreateEvent extends AbstractEvent {
 
 
-    public TransactionCreateEvent(Object payload) {
+    public TransactionCreateEvent(Transaction payload) {
         super(null, EventType.TRANSACTION_CREATE, payload);
     }
 

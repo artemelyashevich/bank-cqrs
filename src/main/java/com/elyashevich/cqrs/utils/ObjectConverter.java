@@ -6,7 +6,7 @@ import jakarta.persistence.Converter;
 import lombok.SneakyThrows;
 
 @Converter
-public class ObjectConverter  implements AttributeConverter<Object, String> {
+public class ObjectConverter implements AttributeConverter<Object, String> {
 
     @SneakyThrows
     @Override
