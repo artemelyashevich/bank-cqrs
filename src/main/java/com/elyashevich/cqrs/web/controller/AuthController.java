@@ -26,7 +26,7 @@ public class AuthController {
     public void register(
             @RequestBody @Validated(OnCreate.class) final ClientDto dto
             ) {
-        final Client client = this.clientMapper.toEntity(dto);
+        var client = this.clientMapper.toEntity(dto);
         this.authService.register(client);
     }
 

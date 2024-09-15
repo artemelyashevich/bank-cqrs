@@ -15,7 +15,7 @@ public class AccountCommandServiceImpl implements AccountCommandService {
 
     @Override
     public void create(final Account object) {
-        final AccountCreateEvent event = new AccountCreateEvent(object);
+        var event = new AccountCreateEvent(object);
         this.eventService.create(event);
     }
 }

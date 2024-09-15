@@ -32,7 +32,7 @@ public class ClientController {
     public ClientDto getById(
             @PathVariable final UUID id
             ) {
-        final Client client = this.clientService.getById(id);
+        var client = this.clientService.getById(id);
         return this.clientMapper.toDto(client);
     }
 
@@ -40,7 +40,7 @@ public class ClientController {
     public List<CardDto> getCardsById(
             @PathVariable final UUID id
     ) {
-        final Client client = this.clientService.getById(id);
+        var client = this.clientService.getById(id);
         return this.cardMapper.toDto(client.getCards());
     }
 
@@ -48,7 +48,7 @@ public class ClientController {
     public AccountDto getAccountById(
             @PathVariable final UUID id
     ) {
-        final Client client = this.clientService.getById(id);
+        var client = this.clientService.getById(id);
         return this.accountMapper.toDto(client.getAccount());
     }
 }

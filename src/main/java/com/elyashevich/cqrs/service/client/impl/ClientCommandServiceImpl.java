@@ -15,7 +15,7 @@ public class ClientCommandServiceImpl implements ClientCommandService {
 
     @Override
     public void create(Client object) {
-        final ClientCreateEvent clientCreateEvent = new ClientCreateEvent(object);
+        var clientCreateEvent = new ClientCreateEvent(object);
         this.eventService.create(clientCreateEvent);
     }
 }

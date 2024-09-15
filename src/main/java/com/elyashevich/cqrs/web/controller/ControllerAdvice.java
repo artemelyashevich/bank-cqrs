@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import java.util.Map;
 import java.util.stream.Collectors;
 
 @RestControllerAdvice
@@ -46,7 +45,7 @@ public class ControllerAdvice {
     public MessageDto validation(
             final MethodArgumentNotValidException e
     ) {
-        final Map<String, String> errors = e.getBindingResult()
+        var errors = e.getBindingResult()
                 .getFieldErrors().stream()
                 .collect(Collectors.toMap(
                         FieldError::getField,

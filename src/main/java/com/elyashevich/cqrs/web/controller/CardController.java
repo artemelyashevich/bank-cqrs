@@ -28,7 +28,7 @@ public class CardController {
     public CardDto getById(
             @PathVariable final UUID id
     ) {
-        final Card card = this.cardService.getById(id);
+        var card = this.cardService.getById(id);
         return cardMapper.toDto(card);
     }
 
@@ -36,13 +36,13 @@ public class CardController {
     public List<TransactionDto> getTransactionsById(
             @PathVariable final UUID id
     ) {
-        final Card card = this.cardService.getById(id);
+        var card = this.cardService.getById(id);
         return this.transactionMapper.toDto(card.getTransactions());
     }
 
     @PostMapping
     public void create() {
-        final UUID uuid = UUID.randomUUID();
+        var uuid = UUID.randomUUID();
         this.cardService.createByClientId(uuid);
     }
 }

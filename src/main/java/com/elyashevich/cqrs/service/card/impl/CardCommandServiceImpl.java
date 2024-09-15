@@ -17,7 +17,7 @@ public class CardCommandServiceImpl implements CardCommandService {
 
     @Override
     public void create(Card object) {
-        final CardCreateEvent cardCreateEvent = new CardCreateEvent(object);
+        var cardCreateEvent = new CardCreateEvent(object);
         this.eventService.create(cardCreateEvent);
     }
 

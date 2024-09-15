@@ -31,8 +31,8 @@ public class CardServiceImpl implements CardService {
 
     @Override
     public void createByClientId(UUID id) {
-        final Client client = this.clientService.getById(id);
-        final Card card = new Card(client.getAccount());
+        var client = this.clientService.getById(id);
+        var card = new Card(client.getAccount());
         this.commandService.create(card);
     }
 

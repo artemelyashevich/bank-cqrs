@@ -15,7 +15,7 @@ public class TransactionCommandServiceImpl implements TransactionCommandService 
 
     @Override
     public void create(Transaction object) {
-        final TransactionCreateEvent transactionCreateEvent = new TransactionCreateEvent(object);
+        var transactionCreateEvent = new TransactionCreateEvent(object);
         this.eventService.create(transactionCreateEvent);
     }
 }

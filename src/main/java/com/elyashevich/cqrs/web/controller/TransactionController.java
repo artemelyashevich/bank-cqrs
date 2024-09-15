@@ -26,7 +26,7 @@ public class TransactionController {
     public TransactionDto getById(
             @PathVariable final UUID id
             ) {
-        final Transaction transaction = this.transactionService.getById(id);
+        var transaction = this.transactionService.getById(id);
         return this.transactionMapper.toDto(transaction);
     }
 
@@ -40,7 +40,7 @@ public class TransactionController {
         )){
             throw  new IllegalStateException("Card doesn't exists");
         }
-        final Transaction transaction = this.transactionMapper.toEntity(dto);
+        var transaction = this.transactionMapper.toEntity(dto);
         this.transactionService.create(transaction);
     }
 }
