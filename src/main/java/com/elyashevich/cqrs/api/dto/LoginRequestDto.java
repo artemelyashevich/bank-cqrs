@@ -1,4 +1,4 @@
-package com.elyashevich.cqrs.web.dto;
+package com.elyashevich.cqrs.api.dto;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;

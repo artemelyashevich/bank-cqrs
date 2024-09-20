@@ -1,6 +1,6 @@
 package com.elyashevich.cqrs.service.account.impl;
 
-import com.elyashevich.cqrs.domain.exception.ResourceNotFoundException;
+import com.elyashevich.cqrs.exception.ResourceNotFoundException;
 import com.elyashevich.cqrs.domain.model.Account;
 import com.elyashevich.cqrs.repository.AccountRepository;
 import com.elyashevich.cqrs.service.account.AccountQueryService;

@@ -1,6 +1,6 @@
 package com.elyashevich.cqrs.service.card.impl;
 
-import com.elyashevich.cqrs.domain.exception.ResourceNotFoundException;
+import com.elyashevich.cqrs.exception.ResourceNotFoundException;
 import com.elyashevich.cqrs.domain.model.Card;
 import com.elyashevich.cqrs.repository.CardRepository;
 import com.elyashevich.cqrs.service.card.CardQueryService;

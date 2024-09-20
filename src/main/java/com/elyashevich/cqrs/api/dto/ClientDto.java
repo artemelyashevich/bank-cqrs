@@ -1,7 +1,7 @@
-package com.elyashevich.cqrs.web.dto;
+package com.elyashevich.cqrs.api.dto;
 
-import com.elyashevich.cqrs.web.dto.validation.OnCreate;
-import com.elyashevich.cqrs.web.dto.validation.OnUpdate;
+import com.elyashevich.cqrs.api.dto.validation.OnCreate;
+import com.elyashevich.cqrs.api.dto.validation.OnUpdate;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;

@@ -1,6 +1,6 @@
 package com.elyashevich.cqrs.service.client.impl;
 
-import com.elyashevich.cqrs.domain.exception.ResourceNotFoundException;
+import com.elyashevich.cqrs.exception.ResourceNotFoundException;
 import com.elyashevich.cqrs.domain.model.Client;
 import com.elyashevich.cqrs.repository.ClientRepository;
 import com.elyashevich.cqrs.service.client.ClientQueryService;

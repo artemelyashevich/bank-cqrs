@@ -1,8 +1,8 @@
-package com.elyashevich.cqrs.web.controller;
+package com.elyashevich.cqrs.api.controller;
 
-import com.elyashevich.cqrs.domain.exception.ResourceAlreadyExistsException;
-import com.elyashevich.cqrs.domain.exception.ResourceNotFoundException;
-import com.elyashevich.cqrs.web.dto.MessageDto;
+import com.elyashevich.cqrs.exception.ResourceAlreadyExistsException;
+import com.elyashevich.cqrs.exception.ResourceNotFoundException;
+import com.elyashevich.cqrs.api.dto.MessageDto;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.FieldError;

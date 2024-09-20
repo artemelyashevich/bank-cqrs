@@ -1,7 +1,7 @@
-package com.elyashevich.cqrs.web.dto.mapper;
+package com.elyashevich.cqrs.api.dto.mapper;
 
 import com.elyashevich.cqrs.domain.model.Client;
-import com.elyashevich.cqrs.web.dto.ClientDto;
+import com.elyashevich.cqrs.api.dto.ClientDto;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

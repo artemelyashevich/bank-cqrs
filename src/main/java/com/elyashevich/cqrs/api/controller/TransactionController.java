@@ -1,11 +1,10 @@
-package com.elyashevich.cqrs.web.controller;
+package com.elyashevich.cqrs.api.controller;
 
-import com.elyashevich.cqrs.domain.model.Transaction;
 import com.elyashevich.cqrs.service.card.CardService;
 import com.elyashevich.cqrs.service.transaction.TransactionService;
-import com.elyashevich.cqrs.web.dto.TransactionDto;
-import com.elyashevich.cqrs.web.dto.mapper.TransactionMapper;
-import com.elyashevich.cqrs.web.dto.validation.OnCreate;
+import com.elyashevich.cqrs.api.dto.TransactionDto;
+import com.elyashevich.cqrs.api.dto.mapper.TransactionMapper;
+import com.elyashevich.cqrs.api.dto.validation.OnCreate;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;

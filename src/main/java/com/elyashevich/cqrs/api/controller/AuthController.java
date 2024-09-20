@@ -1,12 +1,11 @@
-package com.elyashevich.cqrs.web.controller;
+package com.elyashevich.cqrs.api.controller;
 
-import com.elyashevich.cqrs.domain.model.Client;
 import com.elyashevich.cqrs.service.auth.AuthService;
-import com.elyashevich.cqrs.web.dto.ClientDto;
-import com.elyashevich.cqrs.web.dto.LoginRequestDto;
-import com.elyashevich.cqrs.web.dto.LoginResponseDto;
-import com.elyashevich.cqrs.web.dto.mapper.ClientMapper;
-import com.elyashevich.cqrs.web.dto.validation.OnCreate;
+import com.elyashevich.cqrs.api.dto.ClientDto;
+import com.elyashevich.cqrs.api.dto.LoginRequestDto;
+import com.elyashevich.cqrs.api.dto.LoginResponseDto;
+import com.elyashevich.cqrs.api.dto.mapper.ClientMapper;
+import com.elyashevich.cqrs.api.dto.validation.OnCreate;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;

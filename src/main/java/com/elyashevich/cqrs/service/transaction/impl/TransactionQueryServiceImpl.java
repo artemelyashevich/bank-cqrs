@@ -1,6 +1,6 @@
 package com.elyashevich.cqrs.service.transaction.impl;
 
-import com.elyashevich.cqrs.domain.exception.ResourceNotFoundException;
+import com.elyashevich.cqrs.exception.ResourceNotFoundException;
 import com.elyashevich.cqrs.domain.model.Transaction;
 import com.elyashevich.cqrs.repository.TransactionRepository;
 import com.elyashevich.cqrs.service.transaction.TransactionQueryService;

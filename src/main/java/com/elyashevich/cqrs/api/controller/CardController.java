@@ -1,13 +1,10 @@
-package com.elyashevich.cqrs.web.controller;
+package com.elyashevich.cqrs.api.controller;
 
-import com.elyashevich.cqrs.domain.model.Card;
-import com.elyashevich.cqrs.domain.model.Transaction;
 import com.elyashevich.cqrs.service.card.CardService;
-import com.elyashevich.cqrs.web.dto.CardDto;
-import com.elyashevich.cqrs.web.dto.TransactionDto;
-import com.elyashevich.cqrs.web.dto.mapper.CardMapper;
-import com.elyashevich.cqrs.web.dto.mapper.TransactionMapper;
-import lombok.Getter;
+import com.elyashevich.cqrs.api.dto.CardDto;
+import com.elyashevich.cqrs.api.dto.TransactionDto;
+import com.elyashevich.cqrs.api.dto.mapper.CardMapper;
+import com.elyashevich.cqrs.api.dto.mapper.TransactionMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

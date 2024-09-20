@@ -1,4 +1,4 @@
-package com.elyashevich.cqrs.web.dto.mapper;
+package com.elyashevich.cqrs.api.dto.mapper;
 
 import java.util.List;
 

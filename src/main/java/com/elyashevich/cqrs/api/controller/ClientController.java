@@ -1,13 +1,12 @@
-package com.elyashevich.cqrs.web.controller;
+package com.elyashevich.cqrs.api.controller;
 
-import com.elyashevich.cqrs.domain.model.Client;
 import com.elyashevich.cqrs.service.client.ClientService;
-import com.elyashevich.cqrs.web.dto.AccountDto;
-import com.elyashevich.cqrs.web.dto.CardDto;
-import com.elyashevich.cqrs.web.dto.ClientDto;
-import com.elyashevich.cqrs.web.dto.mapper.AccountMapper;
-import com.elyashevich.cqrs.web.dto.mapper.CardMapper;
-import com.elyashevich.cqrs.web.dto.mapper.ClientMapper;
+import com.elyashevich.cqrs.api.dto.AccountDto;
+import com.elyashevich.cqrs.api.dto.CardDto;
+import com.elyashevich.cqrs.api.dto.ClientDto;
+import com.elyashevich.cqrs.api.dto.mapper.AccountMapper;
+import com.elyashevich.cqrs.api.dto.mapper.CardMapper;
+import com.elyashevich.cqrs.api.dto.mapper.ClientMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

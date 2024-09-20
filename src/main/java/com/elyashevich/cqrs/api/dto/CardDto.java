@@ -1,7 +1,7 @@
-package com.elyashevich.cqrs.web.dto;
+package com.elyashevich.cqrs.api.dto;
 
-import com.elyashevich.cqrs.web.dto.validation.OnCreate;
-import com.elyashevich.cqrs.web.dto.validation.OnUpdate;
+import com.elyashevich.cqrs.api.dto.validation.OnCreate;
+import com.elyashevich.cqrs.api.dto.validation.OnUpdate;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Null;
 import lombok.Getter;

@@ -1,8 +1,8 @@
 package com.elyashevich.cqrs.service.auth;
 
 import com.elyashevich.cqrs.domain.model.Client;
-import com.elyashevich.cqrs.web.dto.LoginRequestDto;
-import com.elyashevich.cqrs.web.dto.LoginResponseDto;
+import com.elyashevich.cqrs.api.dto.LoginRequestDto;
+import com.elyashevich.cqrs.api.dto.LoginResponseDto;
 
 public interface AuthService {
 

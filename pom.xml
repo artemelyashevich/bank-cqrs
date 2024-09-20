@@ -35,6 +35,7 @@
 		<mysql-connector.version>8.0.33</mysql-connector.version>
 		<spring.version>3.3.2</spring.version>
 		<map-struct.version>1.5.5.Final</map-struct.version>
+		<jwt.version>0.11.5</jwt.version>
 	</properties>
 
 	<dependencies>
@@ -88,6 +89,25 @@
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct-processor</artifactId>
 			<version>${map-struct.version}</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-api</artifactId>
+			<version>${jwt.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-impl</artifactId>
+			<version>${jwt.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-jackson</artifactId>
+			<version>${jwt.version}</version>
 		</dependency>
 
 	</dependencies>
